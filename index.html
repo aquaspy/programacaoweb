@@ -4,31 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONG Pata Branca – Início</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
+<header class="bg-primaria text-branco p-16">
     <h1>ONG Pata Branca</h1>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="text-branco">☰</label>
     <nav>
         <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projeto.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="index.html" class="text-branco">Início</a></li>
+            <li><a href="projeto.html" class="text-branco">Projetos</a></li>
+            <li><a href="cadastro.html" class="text-branco">Cadastro</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
-    <section>
+<main class="container mt-16">
+    <section class="col-12">
+        <h2>Quem somos</h2>
         <figure>
             <img src="imagens/cat.jpeg" alt="Gato filhote listrado de olhos verdes, cor escura marrom">
             <figcaption>Gato resgatado pela ONG</figcaption>
         </figure>
-        <h2>Quem somos</h2>
         <p>Somos uma organização sem fins lucrativos especializada no cuidado de gatos de rua.</p>
     </section>
 
-    <hr>
+    <hr class="mt-16">
 
     <section>
         <h2>Missão da Pata Branca</h2>
@@ -37,30 +39,29 @@
         </blockquote>
     </section>
 
-    <hr>
+    <hr class="mt-16">
 
     <section>
         <h2>Contato</h2>
-        <table border="1" cellpadding="6">
+        <table class="text-cinza">
             <tr>
-                <th>Endereço</th>
+                <th>Endereço:</th>
                 <td>Rua Garra Afiada, 289 – São Paulo/SP</td>
             </tr>
             <tr>
-                <th>Telefone</th>
+                <th>Telefone:</th>
                 <td>(11) 92322-4324</td>
             </tr>
             <tr>
-                <th>E-mail</th>
-                <td><a href="mailto:contato@patabranca.com.br">contato@patabranca.com.br</a></td>
+                <th>E-mail:</th>
+                <td>contato@patabranca.com.br</td>
             </tr>
         </table>
     </section>
 </main>
 
-<footer>
+<footer class="bg-neutra-200 mt-32 p-16 t-xs text-cinza">
     <p>&copy; 2025 ONG Pata Branca</p>
 </footer>
-
 </body>
 </html>
