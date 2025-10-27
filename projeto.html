@@ -4,52 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos – ONG Pata Branca</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<header>
+<header class="bg-primaria text-branco p-16">
     <h1>ONG Pata Branca</h1>
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="text-branco">☰</label>
     <nav>
         <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="projeto.html">Projetos</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="index.html" class="text-branco">Início</a></li>
+            <li><a href="projeto.html" class="text-branco">Projetos</a></li>
+            <li><a href="cadastro.html" class="text-branco">Cadastro</a></li>
         </ul>
     </nav>
 </header>
 
-<main>
+<main class="container mt-16">
     <h2>Conheça nossas ações</h2>
 
-    <details open>
-        <summary><strong>Projetos Sociais</strong></summary>
-        <ul>
-            <li>Campanhas de esterilização</li>
-            <li>Vacinação em massa</li>
-            <li>Distribuição de alimentos</li>
-        </ul>
-    </details>
-
-    <details>
-        <summary><strong>Voluntariado</strong></summary>
-        <p>Venha ajudar! Você pode:</p>
-        <ol>
-            <li>Cuidar dos animais</li>
-            <li>Transportar gatos para veterinário</li>
-            <li>Divulgar nossas campanhas</li>
-        </ol>
-    </details>
-
-    <details>
-        <summary><strong>Como Doar</strong></summary>
-        <p><strong>Pix:</strong> contato@patabranca.com.br</p>
-        <p>Aceitamos também ração, areia e medicamentos. Entre em contato!</p>
-    </details>
+    <div class="row gap-16">
+        <div class="col">
+            <div class="card">
+                <h3>Projetos Sociais</h3>
+                <p class="text-cinza">Campanhas de esterilização, vacinação e alimentação para gatos de rua.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3>Voluntariado</h3>
+                <p class="text-cinza">Cuidados básicos, transporte e divulgação de campanhas.</p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <h3>Como Doar</h3>
+                <p class="text-cinza">Pix: contato@patabranca.com.br ou doe ração e medicamentos.</p>
+            </div>
+        </div>
+    </div>
 </main>
 
-<footer>
+<footer class="bg-neutra-200 mt-32 p-16 t-xs text-cinza">
     <p>&copy; 2025 ONG Pata Branca</p>
 </footer>
-
 </body>
 </html>
